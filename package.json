@@ -1,0 +1,31 @@
+{
+  "name": "react-boilerplate-production",
+  "version": "0.1.0",
+  "description": "react production boilerplate & microservice starter kit",
+  "main": "index.js",
+  "author": "Michael Scott Hertzberg <mshertzberg@gmail.com> (http://hertzber.gs/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moimikey/react-boilerplate-production.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moimikey/react-boilerplate-production/issues"
+  },
+  "homepage": "https://github.com/moimikey/react-boilerplate-production",
+  "keywords": [
+    "boilerplate",
+    "react"
+  ],
+  "scripts": {
+    "web:build": "./scripts/web:build",
+    "web:start": "./scripts/web:start",
+    "web:lint": "./scripts/web:lint",
+    "start": "npm run web:start"
+  },
+  "dependencies": {
+    "nodemon": "^1.11.0",
+    "webpack": "beta",
+    "webpack-dev-server": "beta"
+  }
+}

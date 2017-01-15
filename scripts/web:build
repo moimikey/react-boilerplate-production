@@ -1,0 +1,35 @@
+# https://webpack.js.org/configuration/
+#
+DEBUG=*,-portfinder*,-express:router*,-babel*,-nodemon*,-eslint:code-path* \
+\
+webpack \
+\
+--config packages/web/webpack.config.babel.js \
+--context packages/web \
+--devtool eval-cheap-module-source-map \
+--output-path packages/web/public \
+--output-filename app.js \
+\
+--hot \
+--progress \
+--colors \
+--labeled-modules \
+--bail \
+\
+--optimize-minimize \
+\
+--display-exclude \
+--display-modules \
+--display-max-modules \
+--display-chunks \
+--display-entrypoints \
+--display-origins \
+--display-cached \
+--display-cached-assets \
+--display-reasons \
+--display-depth \
+--display-used-exports \
+--display-provided-exports \
+--display-error-details \
+\
+--target web

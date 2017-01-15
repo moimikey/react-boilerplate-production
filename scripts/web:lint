@@ -1,0 +1,2 @@
+DEBUG=*,-eslint:ignored-paths*,-eslint:code*,-eslint:config*,-babel \
+packages/web/node_modules/.bin/eslint packages/web/src/**/*

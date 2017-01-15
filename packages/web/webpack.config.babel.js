@@ -1,0 +1,54 @@
+import configureWebpack from 'base-webpack'
+export default configureWebpack({
+  entry: {
+    app: [
+      './src'
+    ]
+  },
+  plugins: [
+    new (require('webpack/lib/LoaderOptionsPlugin'))({
+      options: {
+        context: require('path').resolve(__dirname, 'packages/web')
+      }
+    }),
+    new (require('html-webpack-plugin'))({
+      appMountId: 'root',
+      baseHref: '/',
+      hash: true,
+      inject: false,
+      meta: {
+        title: 'App',
+        description: 'Something something darkside.'
+      },
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true
+      },
+      template: './index.ejs',
+      unsupportedBrowser: true
+    })
+  ],
+  resolve: {
+    extensions: [
+      '.js',
+      '.ejs'
+    ]
+  },
+  module: {
+    rules: [{
+      test: /\.js$/,
+      enforce: 'pre',
+      use: ['eslint-loader']
+    }, {
+      test: /\.ejs$/,
+      use: ['ejs-loader']
+    }, {
+      test: /\.js$/,
+      enforce: 'post',
+      use: ['webpack-module-hot-accept']
+    }]
+  }
+})

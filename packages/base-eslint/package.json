@@ -1,0 +1,12 @@
+{
+  "name": "eslint-config-base-eslint",
+  "version": "0.1.0",
+  "description": "eslint-config-base-eslint",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">= 3",
+    "eslint-plugin-babel": ">= 4",
+    "babel-eslint": ">= 7.1"
+  }
+}

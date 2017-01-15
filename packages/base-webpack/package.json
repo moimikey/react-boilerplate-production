@@ -1,0 +1,14 @@
+{
+  "name": "base-webpack",
+  "version": "0.1.0",
+  "description": "base-webpack",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "webpack": "beta"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-stage-0": "^6.16.0"
+  }
+}
