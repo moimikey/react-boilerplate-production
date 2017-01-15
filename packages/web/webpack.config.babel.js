@@ -47,8 +47,10 @@ export default configureWebpack({
       use: ['ejs-loader']
     }, {
       test: /\.js$/,
-      enforce: 'post',
-      use: ['webpack-module-hot-accept']
+      use: [
+        'babel-loader',
+        'webpack-module-hot-accept'
+      ]
     }]
   }
 })

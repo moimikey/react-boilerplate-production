@@ -1,4 +1,7 @@
-/* eslint no-console:0 */
-export default (function() {
-  console.log('Hello World.');
-})()
+import { React, DOM } from 'base-react'
+export default (function(dom) {
+  dom.render(
+    <div>Hello World.</div>,
+    document.getElementById('root')
+  )
+})(DOM)

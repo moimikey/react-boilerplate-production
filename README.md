@@ -30,7 +30,7 @@ Package-based, with isolated `package.json` entry points:
   * base-eslint/   # base eslint configuration
   * base-react/    # base React factory
   * base-utility/  # base utilities factory
-  * base-webpack/  # base webpack configuration
+  * base-webpack/  # base webpack configuration (webpack2, hmr)
   * web/           # client-side entry point
 ```
 This allows for shareable configuration that is extensible and reusable.
