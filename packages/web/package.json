@@ -5,6 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.21.0",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.8",
@@ -14,6 +15,7 @@
     "eslint": "^3.13.1",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
     "html-webpack-plugin": "^2.26.0",
     "webpack-module-hot-accept": "^1.0.4"
   }

@@ -1,6 +1,6 @@
 # https://webpack.js.org/configuration/
 #
-DEBUG=*,-portfinder*,-express:router*,-babel*,-nodemon*,-eslint:code-path* \
+DEBUG=*,-portfinder*,-express:router*,-babel*,-nodemon*,-eslint:code-path*,-eslint:ignore* \
 \
 webpack \
 \
@@ -15,8 +15,6 @@ webpack \
 --colors \
 --labeled-modules \
 --bail \
-\
---optimize-minimize \
 \
 --display-exclude \
 --display-modules \

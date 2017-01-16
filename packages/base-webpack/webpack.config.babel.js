@@ -1,20 +1,20 @@
-export default function(target = {
+module.exports = function(target = {
   entry: {},
-  plugins: {},
+  module: {},
   output: {},
+  plugins: {},
   resolve: {},
-  module: {}
 }) {
   return {
     entry: {...target.entry},
+    module: {...target.module},
+    output: {...target.output},
     plugins: [
       new (require('webpack/lib/LoaderOptionsPlugin'))({
-        options: {}
+        // ...
       }),
       ...target.plugins
     ],
-    output: {...target.output},
-    resolve: {...target.resolve},
-    module: {...target.module}
+    resolve: {...target.resolve}
   }
 }

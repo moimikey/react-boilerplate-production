@@ -1,6 +1,9 @@
 {
   "presets": [
-    "env",
+    ["env", {
+      "debug": false,
+      "modules": false
+    }],
     "stage-0",
     "react"
   ]

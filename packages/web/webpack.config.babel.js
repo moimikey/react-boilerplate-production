@@ -1,5 +1,4 @@
-import configureWebpack from 'base-webpack'
-export default configureWebpack({
+module.exports = require('base-webpack')({
   entry: {
     app: [
       './src'
@@ -8,7 +7,9 @@ export default configureWebpack({
   plugins: [
     new (require('webpack/lib/LoaderOptionsPlugin'))({
       options: {
-        context: require('path').resolve(__dirname, 'packages/web')
+        context: require('path').resolve(__dirname, 'packages/web'),
+        minimize: true,
+        debug: true
       }
     }),
     new (require('html-webpack-plugin'))({

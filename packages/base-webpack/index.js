@@ -1,2 +1,2 @@
-import configureWebpack from './webpack.config.babel'
-export default configureWebpack
+require('babel-register')
+module.exports = require('./webpack.config.babel')
