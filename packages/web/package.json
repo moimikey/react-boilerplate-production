@@ -11,12 +11,21 @@
     "babel-preset-env": "^1.1.8",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.26.1",
     "ejs-loader": "^0.3.0",
     "eslint": "^3.13.1",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
+    "extract-text-webpack-plugin": "beta",
     "html-webpack-plugin": "^2.26.0",
+    "postcss": "^5.2.10",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-loader": "^1.2.2",
+    "style-loader": "^0.13.1",
     "webpack-module-hot-accept": "^1.0.4"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5"
   }
 }
