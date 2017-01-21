@@ -4,7 +4,13 @@
       "debug": false,
       "modules": false
     }],
-    "stage-0",
-    "react"
-  ]
+    "stage-0"
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-dev-warning"
+      ]
+    }
+  }
 }

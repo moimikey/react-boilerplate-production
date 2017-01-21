@@ -1,26 +1,29 @@
 # https://webpack.js.org/api/cli/
 #
-DEBUG=*,-portfinder*,-express:router*,-babel*,-nodemon*,-eslint:ignored-paths*,-eslint:code*,-eslint:config*, \
+DEBUG=*,-portfinder*,-express:router*,-babel*,-nodemon*,-eslint:ignored-paths*,-eslint:code*,-eslint:config* \
 \
 nodemon -w . -i packages/web/src \
 --exec "webpack-dev-server \
 \
+--port 8000 \
 --context packages/web \
 --content-base packages/web/public \
 --config packages/web/webpack.config.babel.js \
---devtool eval-cheap-module-source-map \
+--devtool eval \
 \
---debug \
---progress \
 --colors \
---watch \
+--compress \
+--debug \
+--history-api-fallback \
 --hot \
 --hot-only \
 --inline \
---compress \
---watch-content-base \
---history-api-fallback \
 --labeled-modules \
-\
+--progress \
 --target web \
+--watch \
+--watch-content-base \
+\
+--output-public-path / \
+--output-pathinfo \
 "

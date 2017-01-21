@@ -1,14 +1,21 @@
 # https://webpack.js.org/configuration/
 #
-DEBUG=*,-portfinder*,-express:router*,-babel*,-nodemon*,-eslint:code-path*,-eslint:ignore* \
+DEBUG=*,-portfinder*,-express:router*,-nodemon*,-eslint:code-path*,-eslint:ignore* \
+\
+rimraf packages/web/public/**/*.js && \
+rimraf packages/web/public/**/*.map && \
+rimraf packages/web/public/**/*.css && \
 \
 webpack \
 \
---config packages/web/webpack.config.babel.js \
+--env production \
 --context packages/web \
---devtool eval-cheap-module-source-map \
+--config packages/web/webpack.config.babel.js \
+--devtool cheap-source-map \
 --output-path packages/web/public \
---output-filename app.js \
+--output-filename [name].js \
+\
+--define process.env.NODE_ENV='"production"' \
 \
 --hot \
 --progress \
@@ -16,18 +23,11 @@ webpack \
 --labeled-modules \
 --bail \
 \
---display-exclude \
---display-modules \
---display-max-modules \
---display-chunks \
---display-entrypoints \
---display-origins \
 --display-cached \
 --display-cached-assets \
---display-reasons \
---display-depth \
---display-used-exports \
---display-provided-exports \
+--display-entrypoints \
 --display-error-details \
-\
---target web
+--display-origins \
+--display-provided-exports \
+--display-reasons \
+--display-used-exports

@@ -19,19 +19,17 @@
   ],
   "scripts": {
     "web:build": "./scripts/web:build",
-    "web:start": "./scripts/web:start",
+    "web:start": "./scripts/web:start:dev",
     "web:lint": "./scripts/web:lint",
+    "web:server:prod": "./scripts/web:start:prod",
     "start": "npm run web:start"
   },
   "dependencies": {
     "nodemon": "^1.11.0",
-    "webpack": "beta",
-    "webpack-dev-server": "beta"
+    "webpack": "^2.2.0-rc",
+    "webpack-dev-server": "^2.2.0-rc"
   },
   "devDependencies": {
-    "babel-plugin-react-css-modules": "^2.2.0",
-    "css-loader": "^0.26.1",
-    "postcss-loader": "^1.2.2",
-    "style-loader": "^0.13.1"
+    "rimraf": "^2.5.4"
   }
 }
