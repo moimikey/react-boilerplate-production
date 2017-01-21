@@ -21,7 +21,7 @@
     "web:build": "./scripts/web:build",
     "web:start": "./scripts/web:start:dev",
     "web:lint": "./scripts/web:lint",
-    "web:server:prod": "./scripts/web:server:prod",
+    "web:server:prod": "./scripts/web:start:prod",
     "start": "npm run web:start"
   },
   "dependencies": {
@@ -30,11 +30,6 @@
     "webpack-dev-server": "^2.2.0-rc"
   },
   "devDependencies": {
-    "assign-deep": "^0.4.5",
-    "babel-plugin-react-css-modules": "^2.2.0",
-    "extendr": "^3.2.2",
-    "merge-deep": "^3.0.0",
-    "mixin-deep": "^1.1.3",
     "rimraf": "^2.5.4"
   }
 }

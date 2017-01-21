@@ -1,5 +1,7 @@
 # react-boilerplate (production)
 
+_49kb production bundle tree-shaked and gzipped!_
+
 # Build
 ```
 yarn install && npm run web:build

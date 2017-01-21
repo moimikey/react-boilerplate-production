@@ -23,7 +23,6 @@ nodemon -w . -i packages/web/src \
 --target web \
 --watch \
 --watch-content-base \
---verbose \
 \
 --output-public-path / \
 --output-pathinfo \
