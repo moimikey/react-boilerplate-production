@@ -18,6 +18,4 @@ build/
 dist/
 lib/
 node_modules/
-packages/web/public/*.js
-packages/web/public/*.html
-packages/web/public/*.map
+packages/web/public/
