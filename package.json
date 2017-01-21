@@ -30,6 +30,7 @@
     "webpack-dev-server": "^2.2.0-rc"
   },
   "devDependencies": {
+    "lerna": "^2.0.0-beta.32",
     "rimraf": "^2.5.4"
   }
 }
