@@ -25,6 +25,7 @@
     "start": "npm run web:start"
   },
   "dependencies": {
+    "node-static": "^0.7.9",
     "nodemon": "^1.11.0",
     "webpack": "^2.2.0-rc",
     "webpack-dev-server": "^2.2.0-rc"
