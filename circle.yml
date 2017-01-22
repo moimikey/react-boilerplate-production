@@ -1,19 +1,24 @@
 machine:
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
   timezone:
       America/New_York
   pre:
-    - npm -g install yarn
+    - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    - sudo apt-get update && sudo apt-get install yarn
   node:
     version: 6.9.4
   # services:
   #   - redis
 dependencies:
   override:
-    - yarn add --global lerna
-    - lerna bootstrap
     - yarn install
+    - yarn add lerna
+    - lerna bootstrap
   cache_directories:
-    - "node_modules"
+    - node_modules
+    - ~/.cache/yarn
 compile:
   override:
     - npm run web:build
