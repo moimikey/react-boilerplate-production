@@ -1,0 +1,21 @@
+machine:
+  timezone:
+      America/New_York
+  pre:
+    - npm -g install yarn
+  node:
+    version: 6.9.4
+  # services:
+  #   - redis
+dependencies:
+  override:
+    - yarn install lerna
+    - lerna bootstrap
+  cache_directories:
+    - "node_modules"
+compile:
+  override:
+    - npm run web:build
+test:
+  override:
+    - npm run test
