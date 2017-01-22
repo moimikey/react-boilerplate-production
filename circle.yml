@@ -9,8 +9,9 @@ machine:
   #   - redis
 dependencies:
   override:
-    - yarn install lerna
+    - yarn add --global lerna
     - lerna bootstrap
+    - yarn install
   cache_directories:
     - "node_modules"
 compile:

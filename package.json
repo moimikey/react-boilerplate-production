@@ -18,11 +18,12 @@
     "react"
   ],
   "scripts": {
+    "start": "npm run web:start",
     "web:build": "./scripts/web:build",
-    "web:start": "./scripts/web:start:dev",
     "web:lint": "./scripts/web:lint",
     "web:server:prod": "./scripts/web:start:prod",
-    "start": "npm run web:start"
+    "web:start": "./scripts/web:start:dev",
+    "web:test": "./scripts/web:test"
   },
   "dependencies": {
     "node-static": "^0.7.9",
