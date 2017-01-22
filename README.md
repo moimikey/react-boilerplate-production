@@ -1,55 +1,32 @@
-# react-boilerplate (production)
+# 💋 react-boilerplate-production
 
-_49kb production bundle tree-shaked and gzipped!_
+> production ready React boilerplate with HMR
 
-# Build
-```
-yarn install && npm run web:build
-```
+😲 _*49kb* production bundle tree-shaked and gzipped !_ 😱
 
-# Develop
-The packages directory is treated as a repository of modules. Unless these are
-present in a repository, they'll need to be linked:
+# Start
 ```
-cd packages/base-eslint && yarn link && cd ..
-cd packages/base-react && yarn link && cd ..
-cd packages/base-utility && yarn link && cd ..
-cd packages/base-webpack && yarn link && cd ..
-cd packages/web
-yarn link eslint-config-base-eslint
-yarn link base-react
-yarn link base-utility
-yarn link base-webpack
-cd ../..
-npm run start
+yarn install && ./node_modules/.bin/lerna bootstrap
 ```
 
-# Architecture
-## Packages (blocks)
-Package-based, with isolated `package.json` entry points:
+# Run
+```
+npm run web:build        # ./scripts/web:build
+npm run web:start        # ./scripts/web:start:dev
+npm run web:lint         # ./scripts/web:lint
+npm run web:server:prod  # ./scripts/web:start:prod
+```
+
+# Packages
+Domain-based, Lerna (https://lernajs.io) powered:
 ```
 * packages/
   * base-eslint/   # base eslint configuration
   * base-react/    # base React factory
   * base-utility/  # base utilities factory
   * base-webpack/  # base webpack configuration (webpack2, hmr)
-  * web/           # client-side entry point
+  * web/           # web client (react, eslint, webpack, cssmodules)
 ```
-This allows for shareable configuration that is extensible and reusable.
-
-## Environment Driven
-To be as 12-factor as possible, configuration happens at the environment-level,
-using command-line switches/flags (see `./scripts/*`). This strategy allows for
-large-scale projects to avoid exponentially increasing per-environment configs.
-
-## Friendly Development
-Jump starting development is as simple as `npm run start`, which launches a
-highly configured instance of `nodemon`. `nodemon` will watch for all changes,
-including newly added dependencies, ensuring smooth restarts of the start
-process, while avoiding conflicting file watchers (ex. webpack).
-
-## Docker
-Environment is dockerized to allow easy developer on-boarding.
 
 # License
 MIT
