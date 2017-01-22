@@ -1,4 +1,4 @@
-# 💋 react-boilerplate-production
+# 💋 react-boilerplate-production [![CircleCI](https://circleci.com/gh/moimikey/react-boilerplate-production.svg?style=svg)](https://circleci.com/gh/moimikey/react-boilerplate-production)
 
 > production ready React boilerplate with HMR
 
