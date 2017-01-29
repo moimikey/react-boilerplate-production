@@ -1,0 +1,12 @@
+{
+  "name": "base-flow",
+  "version": "0.1.0",
+  "description": "base-flow",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "devDependencies": {
+    "flow-bin": "^0.38.0",
+    "flow-typed": "^2.0.0"
+  }
+}

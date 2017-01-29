@@ -2,7 +2,7 @@
 
 > production ready React boilerplate with HMR
 
-😲 _*49kb* production bundle tree-shaked and gzipped !_ 😱
+😲 _*149kb* production bundle tree-shaked and gzipped !_ 😱
 
 # Start
 ```
@@ -23,18 +23,11 @@ Domain-based, Lerna (https://lernajs.io) powered:
 ```
 * packages/
   * base-eslint/   # base eslint configuration
+  * base-flow/     # base flow configuration
   * base-react/    # base React factory
   * base-utility/  # base utilities factory
   * base-webpack/  # base webpack configuration (webpack2, hmr)
   * web/           # web client (react, eslint, webpack, cssmodules)
-```
-
-## Only use what you need
-```
-...
-"base-react": "*",
-"base-webpack": "*",
-...
 ```
 
 # License
