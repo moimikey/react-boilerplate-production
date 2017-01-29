@@ -7,6 +7,5 @@ DEBUG=* static \
             "X-Frame-Options":"sameorigin",
             "X-Content-Type-Options":"nosniff",
             "Content-Security-Policy":"default-src 'none'; script-src 'self' 'unsafe-inline' localhost:8080 www.google-analytics.com ajax.googleapis.com; connect-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' localhost:8080; font-src 'self' data:",
-            "Timing-Allow-Origin":"*"
-          }' \
+            "Timing-Allow-Origin":"*"}' \
 ./packages/web/public

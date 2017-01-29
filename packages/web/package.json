@@ -4,11 +4,16 @@
   "description": "web",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "flow-typed": "./node_modules/base-flow/node_modules/.bin/flow-typed install",
+    "flow": "./node_modules/base-flow/node_modules/.bin/flow"
+  },
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.10",
     "babel-plugin-react-css-modules": "^2.2.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-env": "^1.1.8",
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
@@ -20,6 +25,8 @@
     "eslint-plugin-react": "^6.9.0",
     "extract-text-webpack-plugin": "beta",
     "html-webpack-plugin": "^2.28.0",
+    "flow-bin": "^0.38.0",
+    "html-webpack-plugin": "^2.26.0",
     "postcss": "^5.2.11",
     "postcss-cssnext": "^2.9.0",
     "postcss-loader": "^1.2.2",
@@ -60,6 +67,7 @@
     "inherits": "2.0.3",
     "once": "1.4.0",
     "estraverse": "4.2.0",
+    "js-yaml": "3.7.0",
     "strip-bom": "3.0.0",
     "strip-json-comments": "2.0.1",
     "readable-stream": "2.2.2",

@@ -1,3 +1,4 @@
+/* @flow */
 import { React, DOM } from 'base-react'
 import { App } from './App'
 export default (function(dom) {

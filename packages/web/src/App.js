@@ -1,10 +1,11 @@
+/* @flow */
 /* eslint-disable */
 import { React } from 'base-react'
 import cx from 'classnames'
 import styles from './App.css'
 export class App extends React.Component {
-  constructor(props, context) {
-    super(props, context)
+  constructor(props: void): React.Element<*> {
+    super(props)
     this.styles = styles
     console.log('Hello World.')
   }
