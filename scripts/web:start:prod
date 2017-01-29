@@ -1,1 +1,12 @@
-DEBUG=* static --gzip --spa --cache --port 8080 ./packages/web/public
+DEBUG=* static \
+--port 8080 \
+--gzip \
+--spa \
+--cache \
+--headers '{"X-XSS-Protection":"1",
+            "X-Frame-Options":"sameorigin",
+            "X-Content-Type-Options":"nosniff",
+            "Content-Security-Policy":"default-src 'none'; script-src 'self' 'unsafe-inline' localhost:8080 www.google-analytics.com ajax.googleapis.com; connect-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' localhost:8080; font-src 'self' data:",
+            "Timing-Allow-Origin":"*"
+          }' \
+./packages/web/public
