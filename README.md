@@ -1,5 +1,7 @@
 # 💋 react-boilerplate-production [![CircleCI](https://circleci.com/gh/moimikey/react-boilerplate-production.svg?style=svg)](https://circleci.com/gh/moimikey/react-boilerplate-production)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/moimikey/react-boilerplate-production.svg)](https://greenkeeper.io/)
+
 > production ready React boilerplate with HMR
 
 😲 _*49kb* production bundle tree-shaked and gzipped !_ 😱
